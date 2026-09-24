@@ -113,6 +113,22 @@ COMMIT;
 
 ```
 
+## Insertion  of values into Student table
+
+![output](7b6.png)
+
+## Displaying of Student Information
+
+```
+
+SELECT * FROM student;
+
+```
+
+![output](7b7.png)
+
+
+
 ## 3. Create the Stored Function
 
 ```
@@ -135,6 +151,9 @@ BEGIN
 END;
 
 ```
+## Output of Compiled Functions
+
+![output](7b8.png)
 
 ## Invoke the Function Using SQL SELECT
 
@@ -145,6 +164,10 @@ SELECT
 FROM dual;
 
 ```
+## Execution of stored Functions using SELECT
+
+![output](7b9.png)
+
 ## 5. Test Other Courses
 
 ```
@@ -154,6 +177,10 @@ SELECT
 FROM dual;
 
 ```
+## Execution of stored Functions using other test case
+
+![output](7b10.png)
+
 
 ## Display Count for All Courses
 
@@ -168,6 +195,11 @@ FROM (
 );
 
 ```
+
+## Execution of stored Functions using test case as all Courses
+
+![output](7b11.png)
+
 ## Program 3: Determine Student Grade Using a Complex Stored Function 
 
 ## 1. Create the STUDENT Table
@@ -177,11 +209,15 @@ FROM (
 CREATE TABLE student (
     student_id NUMBER(5) PRIMARY KEY,
     student_name VARCHAR2(50),
-    course VARCHAR2(30),
     marks NUMBER(5,2)
 );
 
 ```
+
+## Output of student table creation
+
+![output](7b12.png)
+
 ## 2. Insert Sample Student Records
 
 ```
@@ -196,6 +232,19 @@ INSERT INTO student VALUES (108, 'Sneha',  58);
 
 COMMIT;
 ```
+##  student table insertion
+
+![output](7b13.png)
+
+##  Display Student table
+
+```
+SELECT * FROM student;
+
+```
+## Output of student details
+
+![output](7b14.png)
 
 ## 3. Create the Stored Function GET_GRADE
 
@@ -232,6 +281,11 @@ END;
 /
 
 ```
+##  Compiled Stored Function
+
+![output](7b15.png)
+
+
 
 ## 4. Invoke the Function Using SELECT 
 
@@ -243,6 +297,10 @@ SELECT
 FROM student;
 
 ```
+
+## Output Invoking  Compiled Stored Function
+
+![output](7b16.png)
 
 
 
